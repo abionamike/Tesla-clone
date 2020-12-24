@@ -29,18 +29,6 @@ const styles = StyleSheet.create({
     buttonsContainer: {
         marginTop: '100%',
     },
-    button: {
-        alignItems: 'center',
-        backgroundColor: 'rgba(23,26,32,.8)',
-        borderRadius: 25,
-        margin: 5,
-        paddingVertical: 5,
-        zIndex: 1000
-    },
-    buttonText: {
-        color: '#fff',
-        textTransform: 'uppercase'
-    },
 });
 
 export default styles;
