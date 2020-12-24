@@ -1,16 +1,15 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from './styles';
-import ModelX from '../../assets/images/ModelX.jpeg';
 import StyledButton from '../styledButton';
 
-const CarItem = () => {
+const CarItem = ({ name, tagline, taglineCTA, image }) => {
     return (
         <View style={styles.carContainer}>
-            <Image source={ModelX} style={styles.images} />
+            <Image source={image} style={styles.images} />
             <View style={styles.header}>
-                <Text style={styles.title}>Model X</Text>
-                <Text style={styles.subtitle}>Starting at $69,420</Text>
+                <Text style={styles.title}>{name}</Text>
+                <Text style={styles.subtitle}>{tagline} <Text style={styles.taglineCTA}>{taglineCTA}</Text></Text>
             </View>
             <View style={styles.buttonsContainer}>
                 <StyledButton type="primary" text="Custom Order" />
